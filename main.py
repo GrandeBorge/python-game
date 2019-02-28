@@ -15,3 +15,12 @@ for y in range(10):
       print("[ ]", end="")
 
   print()
+
+class Player:
+  def __init__(self, x, y, health, damage):
+    self.x = x
+    self.y = y
+    self.health = health
+    self.damage = damage
+  def damage():
+    pass
