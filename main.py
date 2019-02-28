@@ -17,7 +17,7 @@ class World:
     for y in range(self.map_y):
       for x in range(self.map_x):
         for e in n:
-          if (e.x - 1 == x) and (e.y - 1) == y:
+          if (e.x - 1) == x and (e.y - 1) == y:
             print("[{}]".format(e.graphic), end = "")
             break
         else:
