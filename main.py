@@ -10,9 +10,7 @@ class Mobile(Entity):
     self.cur_hp=max_hp
     self.att=att
     self.dif=dif
-  def attackmonster(self,Monster):
-    pass
-  def attackhero(self,Monster):
+  def attack(self,target):
     pass
   def movement(self):
     pass
