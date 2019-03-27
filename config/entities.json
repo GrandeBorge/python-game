@@ -62,29 +62,29 @@
         "color": "blue",
         "interactions": {
             "no-item": {
-                "message": "si apre",
+                "message": "si apre...",
                 "move_to_room": 1
             }
         }
     },
     "2": {
         "name": "porta",
-        "description": "e' una porta",
+        "description": "è una porta",
         "color": "blue",
         "interactions": {
             "no-item": {
-                "message": "quale porta scusa???",
-                "transform": "L"
+                "message": "si apre...",
+                "move_to_room": 2
             }
         }
     },
     "0": {
         "name": "porta",
-        "description": "e' una porta",
+        "description": "è una porta",
         "color": "blue",
         "interactions": {
             "no-item": {
-                "message": "si apre",
+                "message": "si apre...",
                 "move_to_room": 0
             }
         }
