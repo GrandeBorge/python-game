@@ -2,13 +2,13 @@
     "0": {
         "name": "Giardini",
         "description": "Questo luogo è calmo e tranquillo, apparentemente...",
-        "color": "blue"
+        "color": "green"
     },
 
     "1": {
         "name": "Piazza della Vittoria",
         "description": "Questo posto è troppo affollato, sembra difficile capirci qualcosa.",
-        "color": "grey"
+        "color": "black"
     },
     
     "2": {

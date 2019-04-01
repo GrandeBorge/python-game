@@ -1,52 +1,48 @@
 {
-    "O": {
-        "name": "coccinella",
-        "color": "red",
-        "description": "che bella!",
+    "V": {
+        "name": "Teatro Valli",
+        "color": "cyan",
+        "description": "Questo Teatro più noto della città.",
         "interactions":  {
             "no-item": {
-                "message": "la schiacci",
-                "transform": " "
+                "message": "Siamo spiacenti ma al momento il teatro è chiuso, riaprirà più tardi",
+                "transform": "V"
             }
         }
     },
-    "H": {
-        "name": "idrogeno",
-        "description": "e' dell'idrogeno, non chiedermi come fai a percepirlo...",
+    "Z": {
+        "name": "Altalena",
+        "description": "Uno strano oggetto che oscilla su e giù, vuoi provare?",
         "color": "magenta",
         "interactions": {
             "no-item": {
-                "message": "ma scusa... cosa ti aspetti di fare esattamente con l'idrogeno..."
-            },
-            "L": {
-                "message": "opppero'! hai condito le lasagne con l'idrogeno sprigionando una reazione unicornosa",
-                "transform": "U"
-            }
-        }
-    },
-    "L": {
-        "name": "lasagne",
-        "description": "sembrano appetitose",
-        "color": "green",
-        "interactions": {
-            "no-item": {
-                "message": "fa sempre comodo avere delle lasagne in tasca",
-                "transform": " ",
-                "pickup": true
+                "message": "Bene ora che ti sei divertito torna al lavoro capra",
+                "transform": "Z"
             }
         }
     },
     "B": {
-        "name": "bomba",
-        "description": "e' una bomba pronta a detonare, devo sbrigarmi a disinnescarla!",
+        "name": "Banco",
+        "description": "Sei in una scuola e ovviamente ci sono dei banchi... Vuoi riposarti un pò?",
+        "color": "magenta",
+        "interactions": {
+            "no-item": {
+                "message": "Ti sei riposato... Continuiamo?!",
+                "transform": "B"
+            }
+        }
+    },
+    "C": {
+        "name": "Cadavere",
+        "description": "Sembra che qualcuno sia morto... Chi sarà stato? mmm...",
         "color": "red",
         "interactions": {
             "no-item": {
-                "message": "biiiip biiiiiiip biiiiiiiiiiiip",
+                "message": "Che schifo la puzza di cadavere...",
                 "game_over": "la bomba esplode demolendo l'intera stanza"
             },
 
-            "V": {
+            "K": {
                 "message": "tagli con attenzione un filo che penzola da un lato dell'ordigno...",
                 "win": "hai disinnescato la bomba con successo, sei sano e salvo!"
             },
@@ -89,19 +85,19 @@
             }
         }
     },
-    "Q": {
-        "name": "quadro",
-        "description": "e' proprio un bel quadro",
-        "color": "blue",
+    "T": {
+        "name": "Scivolo",
+        "description": "Questo è uno scivolo, scommetto che non ci sali da quando eri bambino. Vuoi riprovare l'emozione che di da?",
+        "color": "yellow",
         "interactions": {
             "no-item": {
-                "message": "spostando il quadro ti accorgi che dietro nasconte una cassaforte",
-                "transform": "F"
+                "message": "Yaaaaa!!! Che cosa inutile, mi ricordo perchè ho smesso!!!",
+                "transform": "T"
             }
         }
     },
 
-    "F": {
+    " q": {
         "name": "cassaforte",
         "description": "e' una cassaforte chiusa",
         "color": "yellow",
@@ -114,32 +110,25 @@
         }
     },
 
-    "V": {
-        "name": "Tenaglie",
-        "description": "sono delle tenaglie piuttosto affilate",
-        "color": "green",
-        "interactions": {
-            "no-item": {
-                "message": "le raccogli",
-                "transform": " ",
-                "pickup": true
-            }
-        }
-    },
+    "M": {
+        "name": "muro",
+        "description": "E' un muro...",
+        "color": "red"
+            },
 
     "P": {
-        "name": "pianta",
-        "description": "questa pianta non viene annaffiata da molto tempo",
-        "color": "green",
+        "name": "Panchina",
+        "description": "E' una semplice panchina... Non provare a sederti",
+        "color": "rs",
         "interactions": {
             "no-item": {
-                "message": "spostando il vaso noti qualcosa di interessante",
-                "transform": "K"
+                "message": "Vedo che ascolti! Ora vuoi indagare?!",
+                "transform": "P"
             }
         }
     },
 
-    "C": {
+    "J": {
         "name": "candelabro",
         "description": "un vecchio candelabro arrugginito",
         "color": "yellow",
@@ -156,21 +145,11 @@
         }
     },
 
-    "U": {
-        "name": "unicorno",
-        "description": "che splendido esemplare fatato!",
-        "color": "blue",
-        "interactions": {
-            "no-item": {
-                "message": "che splendida sensazione",
-                "win": "voli via contento e vivrai una vita fatta di soddisfazioni cucciolose"
-            },
-
-            "L": {
-                "message": "quello che una volta  era un leggiadro  unicorno ora e' un unicorno obeso! non volera' mai piu'",
-                "game_over": "peccato!"
-            }
-        }
+    "_": {
+        "name": "Fontana",
+        "description": "Questa è una fontana, se ci passi sopra ti bagni",
+        "color": "blue"
+        
     },
 
     "K": {
