@@ -13,6 +13,7 @@ WRONG_INTERACTION_RESPONSES = [
 ]
 IS_WINDOWS = sys.platform.lower() == "win32"
 
+
 class Fg: 
     rs="\033[00m"
     black='\033[30m'
@@ -30,6 +31,7 @@ class Fg:
     lightblue='\033[94m'
     pink='\033[95m'
     lightcyan='\033[96m'
+
 
 class Bg: 
     rs="\033[00m"
@@ -94,7 +96,7 @@ class Entity:
                 if "pickup" in action:
                     player.inventory[self.graphic] = self
 
-                if item is not None and action.get("remove_from_inventory", False) == True :
+                if item is not None and action.get("remove_from_inventory", False) == True:
                     del player.inventory[item.graphic]
 
                 if "move_to_room" in action:
@@ -111,7 +113,7 @@ class Entity:
         print(choice(WRONG_INTERACTION_RESPONSES))
 
     def __str__(self):
-        return self.color + " " + self.graphic + " " + Fg.rs + Bg.rs
+        return self.color + " " + self.graphic + " " + Bg.rs
 
 
 class Mobile(Entity):
@@ -120,7 +122,7 @@ class Mobile(Entity):
 
     def change_room(self, room):
         from_room_number = self.room.number
-        self.room = room
+        self.room = room 
         for entity in self.room.entities:
             if entity.graphic == str(from_room_number):
                 self.x = entity.x
@@ -153,18 +155,13 @@ class Player(Mobile):
             for entity in self.inventory.values():
                 print("\t- {} {}: {}".format(entity, entity.name, entity.description))
 
-    def change_player_room(self, room):
-        # self.room.number
-        self.room = room
-        # todo set player coords based on previous room
-
     def get_nearby_entities(self):
         nearby_entities = []
         for y in range(-1, 2):
             for x in range(-1, 2):
                 if not x == y == 0:
                     entity = self.room.get_entity_at_coords(self.x + x, self.y + y)
-                    if entity and type(entity) is not Wall:
+                    if entity and type(e.ntity) is not Wall:
                         nearby_entities.append(entity)
 
         return nearby_entities
@@ -177,6 +174,7 @@ class Wall(Entity):
 
 class Game:
     config = {}
+    
     for key in ("entities", "rooms", "game"):
         file = open("./config/{}.json".format(key))
         config[key] = json.load(file)
@@ -252,7 +250,6 @@ class Game:
                     entity.interact(item)
                     input("premi un tasto per continuare...")
                     break
-
 
 class Room:
     def __init__(self, game, number, color, name, description):
