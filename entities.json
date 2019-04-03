@@ -1,0 +1,246 @@
+{
+    "V": {
+        "name": "Teatro Valli",
+        "color": "cyan",
+        "description": "Questo Teatro più noto della città.",
+        "interactions":  {
+            "no-item": {
+                "message": "Siamo spiacenti ma al momento il teatro è chiuso, riaprirà più tardi",
+                "transform": "V"
+            },
+
+            "R": {
+                "message": "Non so come, ma spolverando una finestra con lo sturacessi intravedi un vasetto misterioso, così frantumi la finestra e lo pigli.",
+                "transform": "N"
+            }
+        }
+    },
+    "Z": {
+        "name": "Altalena",
+        "description": "Uno strano oggetto che oscilla su e giù, vuoi provare?",
+        "color": "magenta",
+        "interactions": {
+            "no-item": {
+                "message": "Bene ora che ti sei divertito torna al lavoro capra",
+                "transform": "Z"
+            }
+        }
+    },
+
+    "B": {
+        "name": "Banco",
+        "description": "Sei in una scuola e ovviamente ci sono dei banchi... Vuoi riposarti un pò?",
+        "color": "magenta",
+        "interactions": {
+            "no-item": {
+                "message": "Ti sei riposato... Continuiamo?!",
+                "transform": "B"
+            }
+        }
+    },
+    "G": {
+        "name": "Spacciatore",
+        "description": "C'è un uomo. Lui potrebbe aver visto qualcosa...",
+        "color": "red",
+        "interactions": {
+            "no-item": {
+                "message": "Ciao amico. Si ho visto qualcosa, ma avrei bisogno di un favore. Io lavoro qui e avrai capito cosa faccio; sono a corto di roba però. Se tu mi porti merce da vendere, io ti ripago con informazioni",
+                "transform":  "G"
+            },
+
+            "E": {
+                "message": "Grazie amico. Credo che la vittima sia stata uccisa con un corpo a corpo. Poi l'assino è entrato al Chierici. Se io fossi stato in lui avrei nascosto l'arma...",
+                "transform": " "
+            },
+
+            "N": {
+                "message": "Credo che tu abbia appena trovato il colpevole...",
+                "win": "Lo spacciatore lo ha ucciso per rubargli il portafoglio!"
+            }
+        }
+    },
+
+    "C": {
+        "name": "Cadavere",
+        "description": "Sembra che qualcuno sia morto... Chi sarà stato ad ucciderlo? mmm...",
+        "color": "red",
+        "interactions": {
+            "no-item": {
+                "message": "Che schifo la puzza di cadavere...",
+                "transform":  "Q"
+            }
+        }
+    },
+
+    "1": {
+        "name": "porta",
+        "description": "e' una porta",
+        "color": "blue",
+        "interactions": {
+            "no-item": {
+                "message": "si apre...",
+                "move_to_room": 1
+            }
+        }
+    },
+    "2": {
+        "name": "porta",
+        "description": "è una porta",
+        "color": "blue",
+        "interactions": {
+            "no-item": {
+                "message": "si apre...",
+                "move_to_room": 2
+            }
+        }
+    },
+
+    "0": {
+        "name": "porta",
+        "description": "è una porta",
+        "color": "blue",
+        "interactions": {
+            "no-item": {
+                "message": "si apre...",
+                "move_to_room": 0
+            }
+        }
+    },
+
+    "T": {
+        "name": "Scivolo",
+        "description": "Questo è uno scivolo, scommetto che non ci sali da quando eri bambino. Vuoi riprovare l'emozione che di da?",
+        "color": "yellow",
+        "interactions": {
+            "no-item": {
+                "message": "Yaaaaa!!! Che cosa inutile, ti ricordi perchè hai smesso ora??!",
+                "transform": "T"
+            }
+        }
+    },
+
+    "Q": {
+        "name": "Cadavere",
+        "description": "Questo è il cadevere che hai già esaminato...",
+        "color": "yellow",
+        "interactions": {
+            "no-item": {
+                "message": "Non c'è ninent'altro da analizzare.",
+                "transform": "Q"
+            },
+
+            "N": {
+                "message": "Cosaa?! Ma è stato avvelenato dalla polvere nel vasetto! E questo vasetto puzza di erba..."
+            }
+        }
+    },
+
+    "P": {
+        "name": "Panchina",
+        "description": "E' una semplice panchina... Non provare a sederti",
+        "color": "black",
+        "interactions": {
+            "no-item": {
+                "message": "Vedo che ascolti! Ora vuoi indagare?!",
+                "transform": "P"
+            },
+
+            "E": {
+                "message": "Ah si? hai ben pensato di fumarti un po' d'erba? Brev!",
+                "game_over": "Hai preso una batosta della madonna!"
+            }
+        }
+    },
+
+    "E": {
+        "name": "Erba",
+        "description": "Qui c'è un pacco non del tutto legale. Forse ha bisogno di questo il tipo che dice di avere informazioni",
+        "color": "green",
+        "interactions": {
+            "no-item": {
+                "message": "In cosa ti sei immischiato?!",
+                "transform": " ",
+                "pickup": true
+            },
+
+            "Y": {
+                "remove_from_inventory": true,
+                "game_over": "Sei uno sfigato! Hai buttato nel cesso l'unica cosa che ti avrebbe aiutato a capirci qualcosa in questa storia..."
+            }
+        }
+    },
+
+    "_": {
+        "name": "Fontana",
+        "description": "Questa è una fontana, se ci passi sopra ti bagni",
+        "color": "blue"
+    },
+
+    "K": {
+        "name": "Coltello",
+        "description": "Questo coltello sembra avere qualcosa di strano. Interagiscici per guardarlo meglio.",
+        "color": "black",
+        "interactions": {
+            "no-item": {
+                "message": "Lo raccogli e lo esamini... La lama ha delle tracce di sangue e il manico ha delle impronte.",
+                "win": "Per oggi hai fatto bene il tuo lavoro! Lo porterò dalla polizia per farlo analizzare. Ora rilassati, ma non troppo."
+            }
+        }
+    },
+
+    "F": {
+        "name": "Fattone",
+        "description": "C'è un ragazzo che non sembra molto affidabile, ma magari sa qualcosa.",
+        "color": "magenta",
+        "interactions": {
+            "no-item": { 
+                "message": "Wee, bella vez!! Che fai da queste parti. Ti va di aprire una gelateria insieme. O magari di metterci a dormire. zzz...",
+                "transform": "F"
+            },
+            "E": {
+                "message": "Grazie vezz!! Mi sa che ora schiaccerò un pisolino perchè non... zzz...",
+                "transform": "R"
+            }
+        }
+    },
+
+    "R": {
+        "name": "Sturacessi",
+        "description": "Cosa ci faceva il pazzo con uno sturacessi?",
+        "color": "red",
+        "interactions": {
+            "no-item": {
+                "message": "Mettilo nell'inventario nel caso ti dovesse venire utile dopo.",
+                "pickup": true,
+                "transform": " "
+            }
+        }
+    },
+
+    "Y": {
+        "name": "Water",
+        "color": "blue",
+        "description": "Questo è un water. Devi fare i tuoi bisogni, sennò fra poco scoppi. BOOOOMMM!!",
+        "interactions":  {
+            "no-item": {
+                "message": "Ok adesso che ti sei liberato... Perchè sei ancora qui?",
+                "transform": "Y"
+            },
+            "R": {
+                "message": "Aspetta! Ma in che condizioni è questo bagno? Il water è intasato, che schifo!! Usa lo sturacessi. Ma è un coltello?!",
+                "transform": "K"
+            }
+        }
+    },
+    "X": {
+        "name": "Drogato",
+        "color": "rs",
+        "description": "Questo tipo non sembra affidabile, credo che tu debba stare attento...",
+        "interactions":  {
+            "no-item": {
+                "message": "Hey, tu! Sei tu quello che mi ha rubato il portafoglio! Ora ti taglio la gola!",
+                "game_over": "Mi sembra che tu sia morto... ahahah"
+            }
+        }
+    }
+}
