@@ -1,19 +1,19 @@
 {
     "0": {
-        "name": "Sala",
-        "description": "Questo luogo e' abbastanza accogliente nonostante il senso di claustrofobia che ti trasmette",
-        "color": "white"
+        "name": "Giardini",
+        "description": "Questo luogo è calmo e tranquillo, apparentemente...",
+        "color": "green"
     },
 
     "1": {
-        "name": "Cucina",
-        "description": "E' tutto molto disordinato. Sembra che nessuno abbia riordinato da molto tempo",
-        "color": "red"
+        "name": "Piazza della Vittoria",
+        "description": "Questo posto è troppo affollato, sembra difficile capirci qualcosa.",
+        "color": "yellow"
     },
     
     "2": {
-        "name": "Sogno",
-        "description": "sei evidentemente in un sogno",
-        "color": "black"
+        "name": "Liceo Chierici",
+        "description": "Attento! Il liceo più figo della città può nascondere qualche 'grammo' di pazzia!!!",
+        "color": "white"
     }
 }

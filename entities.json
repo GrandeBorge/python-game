@@ -1,5 +1,4 @@
 {
-
     "V": {
         "name": "Teatro Valli",
         "color": "cyan",
@@ -8,7 +7,11 @@
             "no-item": {
                 "message": "Siamo spiacenti ma al momento il teatro è chiuso, riaprirà più tardi",
                 "transform": "V"
+            },
 
+            "R": {
+                "message": "Non so come, ma spolverando una finestra con lo sturacessi intravedi un vasetto misterioso, così frantumi la finestra e lo pigli.",
+                "transform": "N"
             }
         }
     },
@@ -20,14 +23,10 @@
             "no-item": {
                 "message": "Bene ora che ti sei divertito torna al lavoro capra",
                 "transform": "Z"
-            },
-
-            "R": {
-                "message": "Non so come, ma spolverando una finestra con lo sturacessi intravedi un vasetto misterioso, così frantumi la finestra e lo pigli.",
-                "pickup": true
             }
         }
     },
+
     "B": {
         "name": "Banco",
         "description": "Sei in una scuola e ovviamente ci sono dei banchi... Vuoi riposarti un pò?",
@@ -230,7 +229,7 @@
             "R": {
                 "message": "Aspetta! Ma in che condizioni è questo bagno? Il water è intasato, che schifo!! Usa lo sturacessi. Ma è un coltello?!",
                 "transform": "K"
-        
+            }
         }
     },
     "X": {
