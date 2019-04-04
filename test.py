@@ -1,41 +1,18 @@
-from random import choice
-
-NOMI = "Mario", "Luici", "Laura", "Paola", "Andonio"
-COGNOMI = "Rossi", "Verdi", "Bianchi", "Neri", "Bruno"
-
-class Persona:
-  def __init__(self, citta, nome, cognome):
+class Persona():
+  def __init__(self, nome, cognome, anni):
     self.nome = nome
     self.cognome = cognome
-    self.citta = citta
+    self.anni = anni
 
   def __str__(self):
-    return "{} {} ({})".format(self.nome, self.cognome, self.citta.nome)
+    return "{} {} {}".format(self.nome, self.cognome, self.anni)
 
-  def print_compaesani(self):
-    for p in self.citta.persone:
-      if p != self:
-        print(p)
+  def __int__(self):
+    return self.anni
 
-class Citta:
-  def __init__(self, nome, numero_persone):
-    self.nome = nome
-    self.persone = [Persona(self, "Giovanni", "Bruno")]
+p = Persona("Giovanni", "Bruno", 31)
+p2 = Persona("Tizio", "Caio", 30)
+p3 = p2
 
-    for i in range(numero_persone -1):
-      self.persone.append(Persona(self, choice(NOMI), choice(COGNOMI)))
-
-  def __str__(self):
-    result = "{}:\n".format(self.nome)
-    for persona in self.persone:
-      result += "{}\n".format(persona)
-
-    return result
-
-reggio = Citta("Reggio", 10)
-pinarella = Citta("Pinarella", 2)
-
-tizio = reggio.persone[3]
-print(tizio)
-
-tizio.print_compaesani()
+if p.anni > p2.anni:
+  print(p)
