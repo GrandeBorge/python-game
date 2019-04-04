@@ -11,6 +11,7 @@ WRONG_INTERACTION_RESPONSES = [
     "non credo proprio",
     "non e'il caso"
 ]
+
 IS_WINDOWS = sys.platform.lower() == "win32"
 
 
@@ -161,7 +162,7 @@ class Player(Mobile):
             for x in range(-1, 2):
                 if not x == y == 0:
                     entity = self.room.get_entity_at_coords(self.x + x, self.y + y)
-                    if entity and type(e.ntity) is not Wall:
+                    if entity and type(entity) is not Wall:
                         nearby_entities.append(entity)
 
         return nearby_entities
@@ -250,6 +251,7 @@ class Game:
                     entity.interact(item)
                     input("premi un tasto per continuare...")
                     break
+
 
 class Room:
     def __init__(self, game, number, color, name, description):
