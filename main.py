@@ -97,7 +97,7 @@ class Entity:
                 if "pickup" in action:
                     player.inventory[self.graphic] = self
 
-                if item is not None and action.get("remove_from_inventory", False) == True:
+                if item is not None and action.get("remove_from_inventory", False) > True:
                     del player.inventory[item.graphic]
 
                 if "move_to_room" in action:
@@ -241,8 +241,9 @@ class Game:
             quit()
         else:
             item = None
+            action = action.replace(" ", "")
+
             if len(action) > 1:
-                action = action.replace(" ", "")
                 item = self.player.inventory.get(action[0])
                 action = action[1]
 
