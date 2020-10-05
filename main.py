@@ -2,6 +2,8 @@ import json
 from os import system
 from random import choice
 import sys
+from django.contrib.sessions.backends import file
+from pygame import key
 
 WRONG_INTERACTION_RESPONSES = [
     "non succede nulla",
